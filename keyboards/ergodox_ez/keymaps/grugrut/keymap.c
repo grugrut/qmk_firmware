@@ -46,7 +46,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   MO(LOWER), KC_LGUI,   KC_LALT,   JP_ZHTG,   MO(LOWER),
                                                          KC_LCTL,   JP_ZHTG,
                                                                     KC_HOME,
-                                              KC_BSPC,   KC_DEL,    KC_END,
+                                              KC_SPC,   KC_BSPC,    KC_END,
   // right  hand      
   JP_YEN,    KC_6,      KC_7,      KC_8,      KC_9,      KC_0,      KC_MINS,
   KC_RBRC,   KC_Y,      KC_U,      KC_I,      KC_O,      KC_P,      JP_AT,
@@ -55,7 +55,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                         MO(RAISE), KC_HYPR,   KC_RALT,   KC_LBRC,   KC_RBRC,
   KC_HYPR,   KC_RALT,  
   KC_PGUP,
-  KC_PGDN,   KC_ENT,    KC_SPC
+  KC_PGDN,   KC_DEL,    KC_ENT
 ),
 /* .---------------------------------------------. .---------------------------------------------.
  * |       | F1  | F2  | F3  | F4  | F5  |       | !       | F6  | F7  | F8  | F9  | F10 |  F11  |
