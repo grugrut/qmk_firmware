@@ -21,18 +21,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* .---------------------------------------------. .---------------------------------------------.
  * |  ESC  |  1  |  2  |  3  |  4  |  5  |JP_CIRC| !JP_YEN |  6  |  7  |  8  |  9  |  0  | MINS  |
  * !-------+-----+-----+-----+-----+-------------! !-------+-----+-----+-----+-----+-----+-------!
- * |  TAB  |  Q  |  W  |  E  |  R  |  T  | LBRC  | ! RBRC  |  Y  |  U  |  I  |  O  |  P  | JP_AT |
+ * |  TAB  |  Q  |  W  |  E  |  R  |  T  |JP_LBRC| !JP_RBRC|  Y  |  U  |  I  |  O  |  P  | JP_AT |
  * !-------+-----+-----+-----x-----x-----!       ! !       !-----x-----x-----+-----+-----+-------!
- * | LCTL  |  A  |  S  |  D  |  F  |  G  |-------! !-------!  H  |  J  |  K  |  L  |SCLN |JP_COLO|
- * !-------+-----+-----+-----x-----x-----! LBRC  ! ! RBRC  !-----x-----x-----+-----+-----+-------!
+ * | LCTL  |  A  |  S  |  D  |  F  |  G  |-------! !-------!  H  |  J  |  K  |  L  |SCLN |JP_COLN|
+ * !-------+-----+-----+-----x-----x-----!JP_LBRC! !JP_RBRC!-----x-----x-----+-----+-----+-------!
  * | LSFT  |  Z  |  X  |  C  |  V  |  B  |       | !       |  N  |  M  |COMM | DOT |SLSH |JP_BSLS|
  * '-------+-----+-----+-----+-----+-------------' '-------------+-----+-----+-----+-----+-------'
- *  |LOWER |LGUI |LALT |JP_ZH|LOWER|                             !RAISE|HYPR |RALT |LBRC | RBRC |
+ *  |LOWER |LGUI |LALT |JP_MH|LOWER|                             !RAISE|JP_HE|RALT |JP_LB|JP_RBR|
  *  '------------------------------'                             '------------------------------'
  *                               .---------------. .---------------.
- *                               | LCTL  |JP_ZHTG| ! HYPR  | RALT  |
+ *                               | LCTL  |JP_ZHTG| !JP_HENK| RALT  |
  *                       .-------+-------+-------! !-------+-------+-------.
- *                       ! BSPC  !  DEL  | HOME  | ! PGUP  |  ENT  !  SPC  !
+ *                       !  SPC  ! BSPC  | HOME  | ! PGUP  |  DEL  !  ENT  !
  *                       !       !       !-------! !-------!       !       !
  *                       |       |       |  END  | ! PGDN  |       |       |
  *                       '-----------------------' '-----------------------'
@@ -43,7 +43,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TAB,    KC_Q,      KC_W,      KC_E,      KC_R,      KC_T,      JP_LBRC,
   KC_LCTL,   KC_A,      KC_S,      KC_D,      KC_F,      KC_G,
   KC_LSFT,   KC_Z,      KC_X,      KC_C,      KC_V,      KC_B,      JP_LBRC,
-  MO(LOWER), KC_LGUI,   KC_LALT,   JP_ZHTG,   MO(LOWER),
+  MO(LOWER), KC_LGUI,   KC_LALT,   JP_MHEN,   MO(LOWER),
                                                          KC_LCTL,   JP_ZHTG,
                                                                     KC_HOME,
                                               KC_SPC,   KC_BSPC,    KC_END,
@@ -52,8 +52,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   JP_RBRC,   KC_Y,      KC_U,      KC_I,      KC_O,      KC_P,      JP_AT,
              KC_H,      KC_J,      KC_K,      KC_L,      KC_SCLN,   JP_COLN,
   JP_RBRC,   KC_N,      KC_M,      KC_COMM,   KC_DOT,    KC_SLSH,   JP_BSLS,
-                        MO(RAISE), KC_HYPR,   KC_RALT,   KC_LBRC,   KC_RBRC,
-  KC_HYPR,   KC_RALT,  
+                        MO(RAISE), JP_HENK,   KC_RALT,   JP_LBRC,   JP_RBRC,
+  JP_HENK,   KC_RALT,  
   KC_PGUP,
   KC_PGDN,   KC_DEL,    KC_ENT
 ),
